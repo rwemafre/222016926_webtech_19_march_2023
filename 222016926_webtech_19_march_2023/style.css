@@ -1,0 +1,78 @@
+/* Apply Arial font family to the entire document with a fallback to sans-serif */
+body{
+	font-family: Arial, sans-serif;
+	/* Set margin to 0 to remove default margin */
+	margin: 0;
+	 /* Set padding to 0 to remove default padding */
+	padding: 0;
+}
+header{
+	background: #f1f1f1;
+	padding: 20px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	display: inline-block;
+	margin-right: 20px;
+}
+nav a{
+	text-decoration: none;
+	color: black;
+}
+nav a:hove{
+	color: #333;
+}
+.dropdown{
+	position: none;
+	display: inline-block;
+	direction: rtl;
+}
+/* Style for the dropdown content */
+.dropdown-contents{
+	/* Hide the dropdown content by default */
+	display: none;
+	/* Position the dropdown content absolutely */
+	position: absolute;
+	/* Set background color for the dropdown content */
+	background-color: #f1f1f1;
+	/* Set minimum width for the dropdown content */
+	min-width: 160px;
+	/* Apply a box shadow to the dropdown content */
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	/* Set the stacking order of the dropdown content */
+	z-index: 1;
+}
+.dropdown-contents a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-contents a:hover{
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-contents{
+	display: block;
+}
+section{
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+footer{
+	/* Center-align the content within the footer */
+	text-align: center;
+	/* Add padding around the content within the footer */
+	padding: 20px;
+	/* Set background color for the footer */
+	background-color: #f1f1f1;
+}
